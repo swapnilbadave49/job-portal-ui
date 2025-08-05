@@ -17,7 +17,7 @@ function SignUp() {
   const [input, setinput] = useState({
     fullname: "",
     email: "",
-    phoneNumber: "", 
+    phonenumber: "", 
     password: "",
     role: "",
     file: ""

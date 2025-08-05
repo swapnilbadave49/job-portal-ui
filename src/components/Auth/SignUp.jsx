@@ -111,8 +111,8 @@ function SignUp() {
             <Label className="mb-2">Phone Number</Label>
             <Input
               type="tel"
-              value={input.phoneNumber} // ✅ Fixed here
-              name="phoneNumber"         // ✅ Fixed here
+              value={input.phonenumber} // ✅ Fixed here
+              name="phonenumber"         // ✅ Fixed here
               onChange={changeEventhandler}
               placeholder="+91"
             />

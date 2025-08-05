@@ -17,7 +17,7 @@ function SignUp() {
   const [input, setinput] = useState({
     fullname: "",
     email: "",
-    phoneNumber: "", // ✅ Fixed here
+    phoneNumber: "", 
     password: "",
     role: "",
     file: ""
@@ -41,7 +41,7 @@ function SignUp() {
     const formData = new FormData();
     formData.append("fullname", input.fullname);
     formData.append("email", input.email);
-    formData.append("phoneNumber", String(input.phoneNumber)); // ✅ Fixed here
+    formData.append("phonenumber", String(input.phonenumber)); 
     formData.append("password", input.password);
     formData.append("role", input.role);
     if (input.file) {

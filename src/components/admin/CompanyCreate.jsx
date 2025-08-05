@@ -13,7 +13,7 @@ import { setSingleCompany } from '@/redux/companySlice'
 const CompanyCreate = () => {
     const navigate = useNavigate();
     const [companyName, setCompanyName] = useState();
-    const dispatch = useDispatch();
+    const dispatch = useDispatch('');
     const registerNewCompany = async () => {
         try {
             const res = await axios.post(`${COMPANY_API_END_POINT}/register`, {name:companyName}, {
@@ -30,8 +30,9 @@ const CompanyCreate = () => {
             }
         } catch (error) {
             console.log(error);
-            console.log("ithe");
-        }
+            toast.error(error.response?.data?.message || "Something went wrong");
+          }
+          
     }
     return (
         <div>
